@@ -556,11 +556,11 @@ var main = function () {
 						if (minutes === "Leaving") {	
 						}
 						else if (minutes === "Arriving") {
-							$('<h5 class="one column"></h5>').text(minutes+"   "+length+" cars").appendTo('.'+abbr);	
+							$('<h5 class="two columns"></h5>').text(minutes+"   "+length+" cars").appendTo('.'+abbr);	
 						}
 						else {
-							$('<h5 class="one column"></h5>').text(minutes+"m").appendTo('.'+abbr);
-							$('<h5 class="one column"></h5>').text(length+" cars").appendTo('.'+abbr);	
+							$('<h5 class="two columns"></h5>').text(minutes+"m").appendTo('.'+abbr);
+							$('<h5 class="two columns"></h5>').text(length+" cars").appendTo('.'+abbr);	
 						}
 						
 					});
