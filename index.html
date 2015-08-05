@@ -9,7 +9,6 @@
   <meta name="description" content="BART now.">
   <meta name="author" content="George Syrop">
   <link rel="stylesheet" type="text/css" href="skeleton.css">
-  <link rel="stylesheet" href="fakeLoader.css">
 
 
   <!-- Mobile Specific Metas
@@ -27,15 +26,13 @@
   <!-- jQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="fakeLoader.min.js"></script>
+
 
 
 </head>
 <body>
-  <script src="app.js"></script>
-  <div id="fakeLoader"></div>
+ 
   <div class="container">
-
 
 
     <div class="row" id="station-label">
@@ -51,16 +48,11 @@
   </div>
 
 
-
 </div>
-  <script type="text/javascript">
-    $("#fakeloader").fakeLoader({
-    timeToHide:1200, //Time in milliseconds for fakeLoader disappear
-    zIndex:"999",//Default zIndex
-    spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
-    bgColor:"#007AFF", //Hex, RGB or RGBA colors
-    });
-  </script>
+
+
+<script src="app.js"></script>
+
 </body>
 </html>
 
