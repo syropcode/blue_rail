@@ -142,7 +142,7 @@ span {
 
 #footer {
       padding: 10px;
-      bottom: 10px;
+      bottom: 0;
       position: absolute;
       text-align: right;
       height: 50px;
