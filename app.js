@@ -555,10 +555,10 @@ var main = function () {
 						if (minutes === "Leaving") {	
 						}
 						else if (minutes === "Arriving") {
-							$('<h5></h5>').text(minutes+ &nbsp +length+" cars").appendTo('.'+abbr);	
+							$('<h5></h5>').text(minutes" "+length+" cars").appendTo('.'+abbr);	
 						}
 						else {
-							$('<h5></h5>').text(minutes+"m"+ &nbsp +length+" cars").appendTo('.'+abbr);	
+							$('<h5></h5>').text(minutes+"m "+length+" cars").appendTo('.'+abbr);	
 						}
 						
 					});
