@@ -140,6 +140,13 @@ span {
   color: #007AFF;
 }
 
+#footer {
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      text-align: right;
+      height: 50px;
+    }
 
 
 
