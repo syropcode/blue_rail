@@ -547,7 +547,7 @@ var main = function () {
 				$(xml).find('etd').each(function(){
 					var abbr = $(this).find('abbreviation').text();
 					var destination = $(this).find('destination').text();
-					$("<div class='row "+ abbr +"'><h2></h2></div>").html(destination).appendTo('#station-label');
+					$("<div class='row "+ abbr +"'></div>").html(destination).appendTo('#station-label');
 					$(this).find('estimate').each(function(){
 						var minutes = $(this).find('minutes').text();
 						var length = $(this).find('length').text();
