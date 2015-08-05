@@ -559,7 +559,7 @@ var main = function () {
 							$('<h5></h5>').text(minutes+"\xa0"+length+" cars").appendTo('.'+abbr);	
 						}
 						else {
-							$('<h5></h5>').text(minutes+"\xa0"+length+" cars").appendTo('.'+abbr);	
+							$('<h5></h5>').text(minutes+"m\xa0"+length+" cars").appendTo('.'+abbr);	
 						}
 						
 					});
