@@ -547,7 +547,7 @@ var main = function () {
 				$(xml).find('etd').each(function(){
 					var abbr = $(this).find('abbreviation').text();
 					var destination = $(this).find('destination').text();
-					$("<div class='row "+ abbr +"' style="fontsize: 3.0rem"></div>").html(destination).appendTo('#station-label');
+					$("<div class='row "+ abbr +"' style="fontsize: 2.0rem;"></div>").html(destination).appendTo('#station-label');
 					$(this).find('estimate').each(function(){
 						var minutes = $(this).find('minutes').text();
 						var length = $(this).find('length').text();
@@ -555,10 +555,10 @@ var main = function () {
 						if (minutes === "Leaving") {	
 						}
 						else if (minutes === "Arriving") {
-							$('<h5></h5>').text(minutes+"&nbsp"+length+" cars").appendTo('.'+abbr);	
+							$('<h5></h5>').text(minutes+ &nbsp +length+" cars").appendTo('.'+abbr);	
 						}
 						else {
-							$('<h5></h5>').text(minutes+"m"+"&nbsp"+length+" cars").appendTo('.'+abbr);	
+							$('<h5></h5>').text(minutes+"m"+ &nbsp +length+" cars").appendTo('.'+abbr);	
 						}
 						
 					});
