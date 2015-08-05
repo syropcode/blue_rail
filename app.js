@@ -552,13 +552,14 @@ var main = function () {
 						var minutes = $(this).find('minutes').text();
 						var length = $(this).find('length').text();
 						var color = $(this).find('hexcolor').text();
-						if (minutes === "Leaving") {	
+						if (minutes === "Leaving") {
+							$('<h5></h5>').text(minutes).appendTo('.'+abbr);	
 						}
 						else if (minutes === "Arriving") {
-							$('<h5></h5>').text(minutes+"&nbsp"+length+" cars").appendTo('.'+abbr);	
+							$('<h5></h5>').text(minutes+"   "+length+" cars").appendTo('.'+abbr);	
 						}
 						else {
-							$('<h5></h5>').text(minutes+"m"+"&nbsp"+length+" cars").appendTo('.'+abbr);	
+							$('<h5></h5>').text(minutes+"m   " +length+" cars").appendTo('.'+abbr);	
 						}
 						
 					});
