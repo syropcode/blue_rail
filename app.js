@@ -552,8 +552,7 @@ var main = function () {
 							var minutes = $(this).find('minutes').text();
 							var length = $(this).find('length').text();
 							var color = $(this).find('hexcolor').text();
-							if (minutes === "Leaving") {
-								$('<h5></h5>').text(minutes).appendTo('.'+abbr);	
+							if (minutes === "Leaving") {	
 							}
 							else if (minutes === "Arriving") {
 								$('<h5></h5>').text(minutes+"   "+length+" cars").appendTo('.'+abbr);	
