@@ -543,7 +543,7 @@ var main = function () {
 			console.log(origin);
 			$(xml).find('station').each(function(){
 				var name = $(this).find('name').text();
-				$('<ul></ul>').text(name).appendTo('.station');
+				$('<h1></h1>').text(name).appendTo('.station');
 				$(xml).find('etd').each(function(){
 					var abbr = $(this).find('abbreviation').text();
 					var destination = $(this).find('destination').text();
