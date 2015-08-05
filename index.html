@@ -29,27 +29,35 @@
 
 </head>
 <body>
-<script src="app.js"></script>
-<div class="container">
-  
-  
+  <script src="app.js"></script>
+  <div id="fakeLoader"></div>
+  <div class="container">
+
+
 
     <div class="row" id="station-label">
-        <h2 class="station" style="margin-top: 2%"></h2>
-        <div class="blueBlock">
-        </div>
+      <h2 class="station" style="margin-top: 2%"></h2>
+      <div class="blueBlock">
+      </div>
     </div>
 
   </div>
 
   <div class="row" id="station-label">
-      <h3 class="trains" style="margin-top: 2%"></h3>
+    <h3 class="trains" style="margin-top: 2%"></h3>
   </div>
 
 
 
 </div>
-
+  <script type="text/javascript">
+    $("#fakeloader").fakeLoader({
+    timeToHide:1200, //Time in milliseconds for fakeLoader disappear
+    zIndex:"999",//Default zIndex
+    spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+    bgColor:"#007AFF", //Hex, RGB or RGBA colors
+    });
+  </script>
 </body>
 </html>
 
