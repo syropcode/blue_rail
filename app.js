@@ -547,12 +547,21 @@ var main = function () {
 				$(xml).find('etd').each(function(){
 					var abbr = $(this).find('abbreviation').text();
 					var destination = $(this).find('destination').text();
-					$("<div class='row "+ abbr +"'></div>").html(destination).appendTo('#station-label');
+					$("<div class='row "+ abbr +"'><h2></h2></div>").html(destination).appendTo('#station-label');
 					$(this).find('estimate').each(function(){
 						var minutes = $(this).find('minutes').text();
 						var length = $(this).find('length').text();
 						var color = $(this).find('hexcolor').text();
-						$('<h5></h5>').text(minutes+"m " +length+" cars").appendTo('.'+abbr);
+						if (minutes === "Leaving") {
+							$('<h5></h5>').text(minutes).appendTo('.'+abbr);	
+						}
+						else if (minutes === "Arriving") {
+							$('<h5></h5>').text(minutes+"   "+length+" cars").appendTo('.'+abbr);	
+						}
+						else {
+							$('<h5></h5>').text(minutes+"m   " +length+" cars").appendTo('.'+abbr);	
+						}
+						
 					});
 				})
 			})
