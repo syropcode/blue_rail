@@ -537,7 +537,7 @@ var main = function () {
 	function getTrains(){  
 	$.ajax({ 
 		type:'GET', 
-		url:'http://api.bart.gov/api/etd.aspx?cmd=etd&orig=' + origin + '&key=Q6L4-U5HX-IQQQ-DT35', 
+		url:'https://api.bart.gov/api/etd.aspx?cmd=etd&orig=' + origin + '&key=Q6L4-U5HX-IQQQ-DT35', 
 		dataType:'xml', 
 		success: function(xml){ 
 			console.log(origin);
